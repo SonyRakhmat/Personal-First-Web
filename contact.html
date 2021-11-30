@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>Creating a Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+        
+</head>
+<!-- NavBar -->
+<body class="body1">
+    <nav class="navbar2">
+        <div class="navbar3">
+        <img src="assets/logo.png" class="image-navbar">
+            <div class="navbar4">
+            <a href ="index.html" class="home-contact" >Home</a>
+            <a href ="blog.html" class="blog1" >Blog</a> 
+            </div>
+        </div>
+        <div class="navbar5">      
+            <button class="navbar7" ><a href="contact.html"class="hrefcontact">Contact Me</a></button>
+        </div>  
+    </nav>
+            <!--
+                <ul> artinya unordered list|| daftar yang tidak berurutan
+                <li> artinya list || daftar
+                inline => merubah element yang sebelumnya block (kolom) menjadi inline (baris)
+                ukuran posisi / layout => better menggunakan %
+                ukuran text => px
+            -->
+        <!-- FormContact -->
+
+    <div class="formx">
+        <div class="labelx">
+            <div style="width: 350px;">
+                <form style="margin-top: 80px;">
+                    <div class="textcontact">
+                        <div>
+                        <!-- Tambahkan selector id di dalam input-->
+                        <label>Name :</label>
+                        <input id="input-name" type="text" class="label1">   
+                        </div>
+                        <div>
+                        <label>Email :</label>
+                        <input id="input-email" type="text" class="email1">
+                        </div>
+                        <div>
+                        <label>Phone Number :</label>
+                        <input id="input-phone" type="number" class="phone1">
+                        </div>
+                        <div>
+                        <label>Subject :</label>
+                        <select id="input-subject" type="radio" class="subject1">
+                            <option>Please Choose One....</option>
+                            <option>Japan Anime</option>
+                            <option>Korea Movie</option>
+                            <option>Korea Song</option>
+                         </select>
+                    </div>
+                    <div>
+                        <label>Your Message :</label>
+                        <textarea 
+                        id="input-message" type="text" class="message1" cols="200">Please fill in your message
+                        </textarea>
+                    </div>
+                    <div>
+                    <button type="button" onclick="submitForm()" class="submit1">
+                    Submit
+                    </button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
